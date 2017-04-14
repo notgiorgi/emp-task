@@ -10,7 +10,6 @@
         "flowtype"
     ],
     "rules": {
-        "flowtype-errors/show-errors": 2,
         "react/prop-types" : 0,
         "react/prefer-stateless-function": 0,
         "react/jsx-filename-extension": [
