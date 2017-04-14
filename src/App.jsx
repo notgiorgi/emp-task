@@ -16,14 +16,14 @@ class App extends Component {
   render() {
     return (
       <Layout>
+        <Sidebar>
+          <Auth />
+        </Sidebar>
+
         <Main>
           <SearchBar />
           <Results />
         </Main>
-
-        <Sidebar>
-          <Auth />
-        </Sidebar>
       </Layout>
     )
   }

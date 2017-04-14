@@ -1,11 +1,23 @@
 import React, { Component } from 'react'
+import { Segment, Input } from 'semantic-ui-react'
+
+import RowCount from './RowCount'
 
 class SearchBar extends Component {
   render() {
     return (
-      <div>
-        SearchBar Component
-      </div>
+      <Segment>
+        <Input
+          fluid
+          icon="search"
+          iconPosition="left"
+          size="large"
+          placeholder="Type repo name..."
+          loading={false}
+          labelPosition="right"
+          label={<RowCount />}
+        />
+      </Segment>
     )
   }
 }
