@@ -5,7 +5,7 @@ import debounce from 'lodash/debounce'
 import container from './container'
 import RowCount from '../RowCount'
 
-class SearchBar extends Component {
+export class SearchBar extends Component {
   constructor() {
     super()
 
