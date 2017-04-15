@@ -1,11 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import { App } from './App'
+import Layout from './Layout'
 
-const wrapper = shallow(<App />)
+const wrapper = shallow(<Layout />)
 
-describe('App Component', () => {
+describe('Layout Component', () => {
   it('renders without exploding', () => {
     expect(wrapper).toHaveLength(1)
   })

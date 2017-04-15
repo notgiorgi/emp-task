@@ -12,7 +12,7 @@ import {
   Sidebar,
 } from './views'
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <Layout>
