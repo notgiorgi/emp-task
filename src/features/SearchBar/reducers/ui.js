@@ -3,7 +3,7 @@ import { combineReducers } from 'redux'
 import { actions } from '../constants'
 
 export const initial = {
-  rowCount: 5,
+  rowCount: 10,
   loading: {},
 }
 
