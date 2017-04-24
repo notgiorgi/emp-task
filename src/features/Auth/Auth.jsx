@@ -16,16 +16,8 @@ const user = {
   created_at: '2011-01-25T18:44:36Z',
 }
 
-const CLIENT_ID = '4a5c45a5c3e9d5009819'
-const REDIRECT_URI = 'http://localhost:3000'
 
 class Auth extends Component {
-  generateGithubURL() {
-    const base = 'https://github.com/login/oauth/authorize'
-    const uri = `${base}?cliend_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=scope=user:email`
-    return encodeURI(uri)
-  }
-
   render() {
     return (
       <Segment>
