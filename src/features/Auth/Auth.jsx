@@ -25,7 +25,6 @@ class Auth extends Component {
           color="green"
           size="large"
           as="a"
-          href={this.generateGithubURL()}
           fluid
         >
           <Icon name="github" /> Login with Github
