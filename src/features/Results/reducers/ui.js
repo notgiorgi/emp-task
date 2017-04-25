@@ -19,9 +19,9 @@ export function currentPage(state = initial.currentPage, { type, payload }) {
   }
 }
 
-export function sort(state = initial, { type, payload }) {
+export function sort(state = initial.sort, { type, payload }) {
   switch (type) {
-    case actions.COLUMN_BY: {
+    case actions.ui.SORT_BY: {
       if (state.column !== payload.column) {
         return {
           column: payload.column,

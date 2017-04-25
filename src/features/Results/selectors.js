@@ -29,14 +29,18 @@ export const getSortFn = createSelector(
 
 export const getSortedRows = createSelector(
   getRows,
+  getSortColumn,
   getSortOrder,
   getSortFn,
-  (rows, order, sortFn) => {
-    switch (order) {
+  (rows, sortCol, sortOrder, sortFn) => {
+    if (!sortCol) return rows
+
+    const rowsCopy = [...rows]
+    switch (sortOrder) {
       case ORDERINGS.ASC:
-        return rows.sort(sortFn)
+        return rowsCopy.sort(sortFn)
       case ORDERINGS.DESC:
-        return rows.sort(reverseCompareFn(sortFn))
+        return rowsCopy.sort(reverseCompareFn(sortFn))
       default:
         return rows
     }

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 
+import { onSort } from '../actions'
 import { getSortedRows, getSortColumn, getSortOrder } from '../selectors'
 
 const mapStateToProps = (state, ownProps) => ({
@@ -11,6 +11,8 @@ const mapStateToProps = (state, ownProps) => ({
   },
 })
 
-const mapDispatchToProps = (dispatch, ownProps) => ({})
+const mapDispatchToProps = dispatch => ({
+  onSort: column => () => dispatch(onSort(column)),
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)

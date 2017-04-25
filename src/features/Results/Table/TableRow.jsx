@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table } from 'semantic-ui-react'
 
-export const renderRow = ({ id, name, owner, stargazers_count, created_at }) => (
+const TableRow = ({ id, name, owner, stargazers_count, created_at }) => (
   <Table.Row key={id}>
     <Table.Cell>{id}</Table.Cell>
     <Table.Cell>{name}</Table.Cell>
@@ -10,3 +10,5 @@ export const renderRow = ({ id, name, owner, stargazers_count, created_at }) => 
         <Table.Cell>{created_at /* eslint-enable */}</Table.Cell>
   </Table.Row>
 )
+
+export default TableRow
