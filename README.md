@@ -37,6 +37,7 @@ Apart from that, please implement the following: (locally, not using API queries
 - [ ] The row of the currently authenticated user (if any) should be highlighed. An user should be able to log in using a "Log in with GitHub" button
 > I didn't quite get this. Rows are repositories, how can there be row of the current user?
 > Also I didn't do "Login with github" button, as it required hooking up nodejs api and I think it was out of the scope of this task.
+> I only did some dummy layout for this.
 
 ## Bonus points
 
