@@ -14,6 +14,3 @@ ReactDOM.render(
   </Provider>
   , document.getElementById('root'),
 )
-
-localStorage.clear()
-console.warn('remove me')
