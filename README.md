@@ -1,10 +1,9 @@
-You can also present your skills in the following:
+> I put checkboxes in your task and some of them have descriptions too.
+> I used Semantic-UI-react for UI, because styling would be time consuming.
 
 - [x] Source code management - we use Git (Github, Bitbucket etc) - in case of using one, please provide an applicable URL where the solved task can be seen
-> You're looking at one right now
 - [ ] Styling tools (styled-components, SASS, CSS, etc)
-- [x] State management (Redux/Flux, Mobx, HOCs, recompose..)
-> I used Redux and HOCs
+- [x] State management: Redux, HOCs
 - [x] ES6 & ES7
 
 ## The task
@@ -15,8 +14,8 @@ The app should render an `<input />` that is used to [search](https://developer.
 
 - [x] On input change, make an API request to the Github API and get details of the user,
 > Using redux thunk for async actions. If it was a big project, I'd prefer redux-saga
-
 - [x] Do not make an API request if results are already stored
+
 - [x] Do not fire requests as long as user is typing. Typically you should throttle requests so that when user types quickly, we fire one request with the latest input value instead of many.
 > debounced using lodash
 
@@ -48,6 +47,5 @@ Those are the tools and patterns we use on daily bases.
 > I configured flow but didn't really use it very much. I like it though.
 - [x] Testing your code. We recommend `Jest JS`
 > I wrote tests for some components and reducers only, It was just matter of time.
-
 - [x] Good README in terms of instructions for reviewers
 - [x] It is better if you do not use a huge boilerplate so the reviewer can focus exclusively in your code. We recommend `create-react-app` or similar
