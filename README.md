@@ -1,12 +1,21 @@
-> I put checkboxes in your task and some of them have descriptions too.
-> I used Semantic-UI-react for UI, because styling would be time consuming.
+## Guide
 
+```sh
+npm install # or you could use yarn
+npm start
+```
+
+I put checkboxes in your task and some of them have descriptions too.
+I used Semantic-UI-react for UI, because styling would be time consuming.
+
+
+## Checkboxes
 - [x] Source code management - we use Git (Github, Bitbucket etc) - in case of using one, please provide an applicable URL where the solved task can be seen
 - [ ] Styling tools (styled-components, SASS, CSS, etc)
 - [x] State management: Redux, HOCs
 - [x] ES6 & ES7
 
-## The task
+### The task
 
 Develop an application displaying dynamic tabular datasets using React.js and fetching data using the Github public api.
 
@@ -38,7 +47,7 @@ Apart from that, please implement the following: (locally, not using API queries
 > Also I didn't do "Login with github" button, as it required hooking up nodejs api and I think it was out of the scope of this task.
 > I only did some dummy layout for this.
 
-## Bonus points
+### Bonus points
 
 Those are the tools and patterns we use on daily bases.
 
